@@ -1,0 +1,1 @@
+Don't use the src/main/webapp directory if your application is packaged as a JAR. This is a standard Maved directory, it works only with WAR packaging. It's sliently ignored by most build tools if you generate a JAR.
