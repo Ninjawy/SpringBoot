@@ -6,17 +6,34 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class FunRestController {
-
+	
+	@Value("${coach.name}")
+	private String coachName;
+	
+	@Value("${team.name}")
+	private String teamName;
+	
+	@GetMapping("/teaminfo")
+	public String getTeamInfo() {
+		return "Coach: " + coachName + ", Team name: " + teamName;
+	}
+	
     // expose "/" that return "Hello world"
     @GetMapping("/")
     public String sayHello() {
         return "Hello world!";
     }
     
-    @Value("${coach.name}")
-    private String coachName;
+    // expose a new endpoint for "workout"
+    @GetMapping("/workout")
+    public String getDailyWorkout() {
+    	return "Run a hard 5k!";
+    }
     
-    @Value("${team.name}")
-    private String teamName;
+    // expose a new endpoint for "fortune"
+    @GetMapping("/fortune")
+    public String getFortune() {
+    	return "This is a fortune";
+    }
 
 }
