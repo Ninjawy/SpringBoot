@@ -14,8 +14,9 @@ public class DemoController {
 	
 	/* Tells Spring to inject a dependency (if you have just one constructor 
 	 * then Autowired annotation is optional)*/
+	
 	@Autowired 
-	public DemoController(Coach theCoach) {
+	public void setCoach(Coach theCoach) {
 		myCoach = theCoach;
 	}
 	
