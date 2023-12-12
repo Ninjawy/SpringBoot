@@ -1,9 +1,9 @@
-package com.training.springcoredemo;
+package com.training.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 
 /*
- * Marks the class as a SPring bean(makes the classa available for dependency 
+ * Marks the class as a SPring bean(makes the class available for dependency 
  * injection)*/
 
 @Component 
