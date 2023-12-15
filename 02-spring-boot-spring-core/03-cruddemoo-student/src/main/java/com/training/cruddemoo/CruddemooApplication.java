@@ -8,6 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
+import java.util.List;
+
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 public class CruddemooApplication {
@@ -19,14 +21,58 @@ public class CruddemooApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
 		return runner -> {
-		//	createStudent(studentDAO);
-		//	createMultipleStudents(studentDAO);
-			readStudent(studentDAO);
+//			createStudent(studentDAO);
+			createMultipleStudents(studentDAO);
+//			readStudent(studentDAO);
+//			queryForStudents(studentDAO);
+//			updateStudent(studentDAO);
+//			deleteStudent(studentDAO);
+//			deleteAll(studentDAO);
 		};
 	}
 
+	private void deleteAll(StudentDAO studentDAO) {
+		System.out.println("DeletingAllStudents");
+		int numRowsDeleted = studentDAO.deleteAll();
+		System.out.println("Deleted row count: " + numRowsDeleted);
+	}
+
+	private void deleteStudent(StudentDAO studentDAO) {
+		int studentId = 3;
+		System.out.println("Deleting student id " + studentId);
+		studentDAO.delete(studentId);
+	}
+
+	private void updateStudent(StudentDAO studentDAO) {
+//		retrieve student based on the id: primary key
+		int studentId = 1;
+		System.out.println("Getting student with id: " + studentId);
+		Student myStudent = studentDAO.findById(studentId);
+
+//		change fist name to "Scooby"
+		System.out.println("Updating student...");
+		myStudent.setFirstName("Scooby");
+
+//		update the student
+		studentDAO.update(myStudent);
+
+
+//		display the updated student
+		System.out.println("Updated student: " + myStudent);
+	}
+
+	private void queryForStudents(StudentDAO studentDAO) {
+//		get a list for students
+		List<Student> theStudents = studentDAO.findAll("Doe");
+
+//		display list for students
+		for(Student s : theStudents) {
+			System.out.println(s);
+		}
+	}
+
 	private void readStudent(StudentDAO studentDAO) {
-/*		// create a student object
+		// create a student object
 		System.out.println("Creating new student object...");
 		Student tempStudent = new Student("Daffy", "Duck", "daffy@training.com");
 
@@ -37,9 +83,8 @@ public class CruddemooApplication {
 		// display id of the saved student
 		int theId = tempStudent.getId();
 		System.out.println("Saved student. Generated id: " + theId);
-*/
+
 		// retrieve student based on the id: primary key
-		Integer theId = 4;
 		System.out.println("Retrieving student with id: " + theId);
 		Student myStudent = studentDAO.findById(theId);
 
