@@ -370,3 +370,13 @@ java.io.FileNotFoundException: C:\_Personal\SB\SpringBoot\02-spring-boot-spring-
 2023-12-14 16:23:20,840 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-12-14 16:23:20,849 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2023-12-14 16:23:20,853 [Worker-7: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\_Personal\SB\SpringBoot\02-spring-boot-spring-core\03-cruddemoo-student\src\test\resources
+2023-12-15 09:37:41,085 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-12-15 09:38:11,934 [Worker-14: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-12-15 09:38:13,357 [Worker-14: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.training:cruddemoo:0.0.1-SNAPSHOT @ C:\_Personal\SB\SpringBoot\02-spring-boot-spring-core\03-cruddemoo-student\target\classes\META-INF\maven\com.training\cruddemoo\pom.xml.
+2023-12-15 09:38:14,721 [Worker-14: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cruddemoo/src/main/java
+2023-12-15 09:38:14,722 [Worker-14: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cruddemoo/src/main/resources
+2023-12-15 09:38:14,722 [Worker-14: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cruddemoo/src/main/resources
+2023-12-15 09:38:14,723 [Worker-14: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /cruddemoo/src/test/java
+2023-12-15 09:38:14,723 [Worker-14: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /cruddemoo/src/test/resources
+2023-12-15 09:38:14,725 [Worker-14: Update Maven projects configuration] ERROR o.e.m.j.i.AbstractJavaProjectConfigurator - Failed to find a compatible VM for environment id 'JavaSE-17', falling back to workspace default
+2023-12-15 09:38:15,281 [Worker-14: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 2.00 sec, update config takes 0.00 sec 
