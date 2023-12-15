@@ -7,7 +7,8 @@
     <list default="true" id="770181f4-d0f7-4313-a421-a0b6b36f7c5a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/CruddemooApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/CruddemooApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/dao/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/dao/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/dao/StudentDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/CruddemooApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/CruddemooApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/dao/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/dao/StudentDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/dao/StudentDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/dao/StudentDAOImpl.class" afterDir="false" />

@@ -8,6 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
+import java.util.List;
+
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
 public class CruddemooApplication {
@@ -19,10 +21,21 @@ public class CruddemooApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
 		return runner -> {
-		//	createStudent(studentDAO);
-		//	createMultipleStudents(studentDAO);
-			readStudent(studentDAO);
+//			createStudent(studentDAO);
+//			createMultipleStudents(studentDAO);
+//			readStudent(studentDAO);
+			queryForStudents(studentDAO);
 		};
+	}
+
+	private void queryForStudents(StudentDAO studentDAO) {
+//		get a list for students
+		List<Student> theStudents = studentDAO.findAll("Doe");
+
+//		display list for students
+		for(Student s : theStudents) {
+			System.out.println(s);
+		}
 	}
 
 	private void readStudent(StudentDAO studentDAO) {
