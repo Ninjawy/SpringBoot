@@ -7,6 +7,7 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -40,4 +41,30 @@ public class StudentDAOImpl implements StudentDAO {
         theQuery.setParameter("theData", theLastName);
         return theQuery.getResultList();
     }
+
+    @Override
+    @Transactional
+    public void update(Student theStudent) {
+        entityManager.merge(theStudent);
+    }
+
+    @Override
+    @Transactional
+    public void delete(Integer id) {
+        // retrieve the student
+        Student theStudent = entityManager.find(Student.class, id);
+
+        // delete the student
+        entityManager.remove(theStudent);
+
+    }
+
+    @Override
+    @Transactional
+    public Integer deleteAll() {
+        return entityManager.createQuery(
+                    "DELETE FROM Student").executeUpdate();
+    }
+
+
 }
