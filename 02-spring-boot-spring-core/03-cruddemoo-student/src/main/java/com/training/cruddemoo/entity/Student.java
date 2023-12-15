@@ -28,6 +28,8 @@ public class Student {
         this.email = email;
     }
 
+    public Student() {}
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }

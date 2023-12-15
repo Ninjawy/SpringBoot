@@ -26,7 +26,7 @@ public class CruddemooApplication {
 	}
 
 	private void readStudent(StudentDAO studentDAO) {
-/*		// create a student object
+		// create a student object
 		System.out.println("Creating new student object...");
 		Student tempStudent = new Student("Daffy", "Duck", "daffy@training.com");
 
@@ -37,9 +37,8 @@ public class CruddemooApplication {
 		// display id of the saved student
 		int theId = tempStudent.getId();
 		System.out.println("Saved student. Generated id: " + theId);
-*/
+
 		// retrieve student based on the id: primary key
-		Integer theId = 4;
 		System.out.println("Retrieving student with id: " + theId);
 		Student myStudent = studentDAO.findById(theId);
 
