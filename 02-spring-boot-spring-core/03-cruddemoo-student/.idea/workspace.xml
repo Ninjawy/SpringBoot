@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="770181f4-d0f7-4313-a421-a0b6b36f7c5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../04-spring-boot-rest-crud/src/main/java/com/training/demo/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-spring-boot-rest-crud/src/main/java/com/training/demo/rest/DemoRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-spring-boot-rest-crud/src/main/java/com/training/demo/rest/StudentErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-spring-boot-rest-crud/src/main/java/com/training/demo/rest/StudentNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-spring-boot-rest-crud/src/main/java/com/training/demo/rest/StudentRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-spring-boot-rest-crud/src/main/java/com/training/demo/rest/StudentRestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/CruddemooApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/CruddemooApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/dao/StudentDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/dao/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/training/cruddemoo/dao/StudentDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/CruddemooApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/CruddemooApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/dao/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/dao/StudentDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/dao/StudentDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/training/cruddemoo/dao/StudentDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../04-spring-boot-rest-crud/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../04-spring-boot-rest-crud/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +57,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;3-hibernate-jpa-crud&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/_Personal/SB/SpringBoot/02-spring-boot-spring-core/03-cruddemoo-student&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;04-spring-boot-rest-crud&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/_Personal/SB/SpringBoot/02-spring-boot-spring-core/04-spring-boot-rest-crud&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -81,16 +82,6 @@
     <configuration default="true" type="LiferayDockerServerConfiguration" factoryName="Liferay Docker Server">
       <option name="passParentEnvironments" value="true" />
       <option name="workspaceLocation" value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="LiferayServerConfiguration" factoryName="Liferay Server">
-      <Liferay-Sever alternativeJrePath="" bundleLocation="" bundleType="" developerMode="true" gogoShellPort="11311" vmParameters="-Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m">
-        <envs>
-          <env name="PATH" value="$PROJECT_DIR$/../../../../../Program Files/Java/jdk-21/bin:C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-1.8\bin;C:\Program Files\PostgreSQL\16\bin;C:\Users\ieiadm\.jpm\windows\bin;C:\Gradle\gradle-8.3\bin;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Java\jdk-11.0.17\bin;C:\_Personal\Software\apache-maven-3.9.5\bin;C:\Users\abdalla.mahmoud\AppData\Local\Microsoft\WindowsApps;C:\Users\abdalla.mahmoud\AppData\Local\Programs\Git\cmd;C:\Users\abdalla.mahmoud\AppData\Local\GitHubDesktop\bin;C:\Users\abdalla.mahmoud\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.2.3\bin;;" />
-          <env name="JAVA_HOME" value="$PROJECT_DIR$/../../../../../Program Files/Java/jdk-21" />
-        </envs>
-        <module name="cruddemoo" />
-      </Liferay-Sever>
       <method v="2" />
     </configuration>
     <recent_temporary>
